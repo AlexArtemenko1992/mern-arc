@@ -1,0 +1,37 @@
+.top-content__wrapper {
+  position: absolute;
+  top: -300px;
+  left: 0;
+}
+
+.top__title {
+  color: #fff;
+  font-weight: 300;
+  font-size: 65px;
+}
+
+.top__subtitle {
+  color: #fff;
+  display: flex;
+}
+
+.way-group svg {
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+}
+
+.way-group {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.way-text {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}

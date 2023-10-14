@@ -1,0 +1,30 @@
+* {
+  font-family: "Oswald";
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald";
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a.active {
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

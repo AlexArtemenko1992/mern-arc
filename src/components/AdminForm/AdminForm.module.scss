@@ -1,0 +1,63 @@
+.admin-form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 30px auto 0;
+}
+
+.admin-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-form label {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: -3px;
+  color: #fff;
+}
+
+.admin-form input {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.admin-form select {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.admin-form input::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+
+.admin-form button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+  background-color: rgba(0, 21, 249, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}

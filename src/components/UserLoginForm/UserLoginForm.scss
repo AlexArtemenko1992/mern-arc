@@ -1,0 +1,185 @@
+.user-login-form {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.field-controll {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.field-label {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.field-input {
+  background: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 8px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.field-input-error {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.field-input.field-input-error::placeholder {
+  color: red;
+}
+
+.error-msg {
+  font-size: 13px;
+  color: red;
+}
+
+.field-label-error {
+  color: red;
+}
+
+.field-input::placeholder {
+  color: #fff;
+}
+
+.user-login-form .button {
+  font-size: 25px;
+  padding: 5px 30px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #8913ff;
+  transition: 0.4s all ease-in-out;
+  margin-left: auto;
+  display: block;
+  margin-top: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-login-form button:hover {
+  background-color: #a251f2;
+  color: #f8f6f6;
+}
+
+.my-controll {
+  // color: #fff !important;
+  font-family: "Oswald" !important;
+}
+
+.my-controll.my-controll-error {
+  color: red !important;
+}
+
+.eye-icon.eye-icon-error {
+  fill: red;
+}
+
+.my-controll.my-controll-error
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root::before {
+  color: red !important;
+  border-bottom: 1px solid red !important;
+}
+
+.my-controll.my-controll-error
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+  color: red !important;
+}
+
+.my-controll svg {
+  fill: #fff !important;
+}
+
+.field-select-error svg {
+  fill: red !important;
+}
+
+.css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root {
+  color: #fff !important;
+  font-family: "Oswald" !important;
+}
+
+.field-select-error .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root {
+  color: red !important;
+}
+
+.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input {
+  padding-left: 4px !important;
+  padding-bottom: 8px !important;
+}
+
+.css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root::before {
+  border-bottom: 1px solid #fff !important;
+  font-family: "Oswald" !important;
+}
+
+.field-select-error
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root::before {
+  border-bottom: 1px solid red !important;
+}
+
+.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+  fill: #fff !important;
+}
+
+.my-custom-input {
+  font-family: "Oswald" !important;
+}
+.css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:hover:not(
+    .Mui-disabled,
+    .Mui-error
+  ):before {
+  border-bottom: 2px solid #fff;
+}
+
+.field-select-error
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:hover:not(
+    .Mui-disabled,
+    .Mui-error
+  ):before {
+  border-bottom: 2px solid red !important;
+}
+
+.css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:after {
+  border-bottom: 2px solid #fff !important;
+}
+
+.field-select-error
+  .css-m5hdmq-MuiInputBase-root-MuiInput-root-MuiSelect-root:after {
+  border-bottom: 2px solid red !important;
+}
+
+.help-text {
+  color: #fff;
+  font-size: 12px;
+  margin-top: -6px;
+  margin-left: 5px;
+}
+
+.help-text a {
+  text-decoration: underline;
+  color: rgb(103, 103, 192);
+}
+
+.eye-icon {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+}

@@ -1,0 +1,41 @@
+.header {
+  padding: 25px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.login-btns__group {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-links {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  width: 85%;
+}
+
+.header-link__item {
+  margin-right: 20px;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+
+  &:last-child {
+    margin-left: auto;
+  }
+}
+
+.header-logo {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 60px;
+  width: 200px;
+}
