@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mern-arc/static/css/main.1510c040.css",
+    "main.js": "/mern-arc/static/js/main.ba4dc933.js",
+    "static/media/bg-video.mp4": "/mern-arc/static/media/bg-video.94346e6d8380e3d0bb1a.mp4",
+    "static/media/bg.jpg": "/mern-arc/static/media/bg.e4ea2ee304f70ea1d4fe.jpg",
+    "static/media/glory-partners-icon.svg": "/mern-arc/static/media/glory-partners-icon.af91c00ecd6098a548f475cf732b8d51.svg",
+    "static/media/tik-tok-courses.svg": "/mern-arc/static/media/tik-tok-courses.2c6809e71a53df73bdca07c6019ef784.svg",
+    "static/media/tiktok-icon.svg": "/mern-arc/static/media/tiktok-icon.2c6809e71a53df73bdca07c6019ef784.svg",
+    "static/media/facebook-courses.svg": "/mern-arc/static/media/facebook-courses.a1c4df9b8f58390eff0e1ab77c2c9f2f.svg",
+    "static/media/eye.svg": "/mern-arc/static/media/eye.52efa82ce6afac53fe23346d893d98ce.svg",
+    "index.html": "/mern-arc/index.html",
+    "static/media/facebook-icon.svg": "/mern-arc/static/media/facebook-icon.e5f20b7ba3d8bea74b6750fef0c39660.svg",
+    "main.1510c040.css.map": "/mern-arc/static/css/main.1510c040.css.map",
+    "main.ba4dc933.js.map": "/mern-arc/static/js/main.ba4dc933.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1510c040.css",
+    "static/js/main.ba4dc933.js"
+  ]
+}
