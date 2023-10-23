@@ -9,7 +9,6 @@ import Container from "../global/Container/Container";
 import Header from "../global/Header/Header";
 import BgVideoHomePage from "../global/BgVideoHomePage/BgVideoHomePage";
 import PageAnimation from "../global/PageAnimation/PageAnimation";
-import Achievements from "./Achievements/Achievements";
 import Preloader from "../global/Preloader/Preloader";
 import Rates from "./Rates/Rates";
 import Accordion from "../global/Accordion/Accrodion";
@@ -17,6 +16,10 @@ import Faq from "./Faq/Faq";
 import ModalPortal from "../global/ModalPortal/ModalPortal";
 import Advantages from "./Advantages/Advantages";
 import Partners from "./Partners/Partners";
+import Tooltip from "./Tooltip/Tooltip";
+import UserRegistrationForm from "./UserRegistrationForm/UserRegistrationForm";
+import Areas from "./Areas/Areas";
+import Info from "./Info/Info";
 
 export {
   LeftSideAdmin,
@@ -30,7 +33,6 @@ export {
   UserLoginForm,
   Top,
   PageAnimation,
-  Achievements,
   Preloader,
   Rates,
   Accordion,
@@ -38,4 +40,8 @@ export {
   ModalPortal,
   Advantages,
   Partners,
+  Tooltip,
+  UserRegistrationForm,
+  Areas,
+  Info,
 };

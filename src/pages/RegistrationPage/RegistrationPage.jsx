@@ -1,4 +1,4 @@
-import { UserLoginForm } from "../../components";
+import { UserRegistrationForm } from "../../components";
 import "./RegistrationPage.scss";
 import { motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ const RegistrationPage = () => {
       animate={{ opacity: 1 }}
       className="registration-page"
     >
-      <UserLoginForm isRegistration />
+      <UserRegistrationForm />
     </motion.div>
   );
 };

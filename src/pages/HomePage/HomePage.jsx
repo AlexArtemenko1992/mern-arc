@@ -2,11 +2,12 @@
 import {
   Top,
   PageAnimation,
-  Achievements,
   Rates,
   Faq,
   Advantages,
   Partners,
+  Areas,
+  Info,
 } from "../../components";
 import "./HomePage.scss";
 
@@ -14,10 +15,12 @@ const HomePage = () => {
   return (
     <PageAnimation>
       <Top />
-      <Achievements />
+      <Info />
+      <Areas />
+      <Advantages />
       <Rates />
       <Faq />
-      <Advantages />
+
       <Partners />
     </PageAnimation>
   );

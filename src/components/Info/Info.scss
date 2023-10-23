@@ -1,0 +1,39 @@
+.info {
+  padding-bottom: 80px;
+}
+
+.info-title {
+  font-size: 46px;
+  color: #111;
+  margin-bottom: 60px;
+}
+
+.info-item {
+  //   flex-basis: 25%;
+}
+
+.info-list {
+  display: flex;
+}
+
+.item-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #111;
+}
+
+.item-title::before {
+  content: "";
+  display: block;
+  height: 45px;
+  width: 4px;
+  background: linear-gradient(to bottom, #ffeb3b, #ff4e50);
+  position: absolute;
+  top: 0;
+  left: -16px;
+}

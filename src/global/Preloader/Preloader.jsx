@@ -6,7 +6,7 @@ const Preloader = () => {
     <div id="preloader">
       <span className="count">
         <span className="">Loading...</span>
-        <CountUp end={100} duration={4} />
+        <CountUp end={100} duration={1} />
         <span>%</span>
       </span>
       <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
