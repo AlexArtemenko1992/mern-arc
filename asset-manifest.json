@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f803769.css",
-    "main.js": "/static/js/main.b7a047c6.js",
-    "static/media/command.jpg": "/static/media/command.fa6fd0cd8fa15c687bd3.jpg",
-    "static/media/bg.jpg": "/static/media/bg.e4ea2ee304f70ea1d4fe.jpg",
-    "static/media/person_1.jpeg": "/static/media/person_1.4efbd3d2bb1d39d7413d.jpeg",
-    "static/media/vac-img.png": "/static/media/vac-img.1e8c3fbbaff168766f4a.png",
-    "static/media/my-bet-icon.png": "/static/media/my-bet-icon.3500fd4cc0783d9727fe.png",
-    "static/media/person_2.jpeg": "/static/media/person_2.518b0f393f3ebf95633c.jpeg",
-    "static/media/wp-partners.svg": "/static/media/wp-partners.347261dc32a2b17a18694a0408ecc50c.svg",
-    "static/media/glory-partners-icon.svg": "/static/media/glory-partners-icon.d361b9b7e91a69a666d2718880efce6f.svg",
-    "static/media/pin-up-partners.svg": "/static/media/pin-up-partners.aefa576218bebd814d9f84e02b848fac.svg",
-    "static/media/igaming-icon.svg": "/static/media/igaming-icon.ecdee3e76ee2ed338458c105db976019.svg",
-    "static/media/tik-tok-courses.svg": "/static/media/tik-tok-courses.2c6809e71a53df73bdca07c6019ef784.svg",
-    "static/media/facebook-courses.svg": "/static/media/facebook-courses.a1c4df9b8f58390eff0e1ab77c2c9f2f.svg",
-    "static/media/bro-icon.svg": "/static/media/bro-icon.e8e3999c7279fb04f57b3006c1861736.svg",
-    "static/media/trafflab.svg": "/static/media/trafflab.dd5d1aff0c7da1bcd27636f507dcd5a1.svg",
-    "static/media/eye.svg": "/static/media/eye.52efa82ce6afac53fe23346d893d98ce.svg",
-    "index.html": "/index.html",
-    "main.9f803769.css.map": "/static/css/main.9f803769.css.map",
-    "main.b7a047c6.js.map": "/static/js/main.b7a047c6.js.map"
+    "main.css": "/mern-arc/static/css/main.0ea6ef6c.css",
+    "main.js": "/mern-arc/static/js/main.7c3c1a79.js",
+    "static/media/command.jpg": "/mern-arc/static/media/command.fa6fd0cd8fa15c687bd3.jpg",
+    "static/media/bg.jpg": "/mern-arc/static/media/bg.e4ea2ee304f70ea1d4fe.jpg",
+    "static/media/person_1.jpeg": "/mern-arc/static/media/person_1.4efbd3d2bb1d39d7413d.jpeg",
+    "static/media/vac-img.png": "/mern-arc/static/media/vac-img.1e8c3fbbaff168766f4a.png",
+    "static/media/my-bet-icon.png": "/mern-arc/static/media/my-bet-icon.3500fd4cc0783d9727fe.png",
+    "static/media/person_2.jpeg": "/mern-arc/static/media/person_2.518b0f393f3ebf95633c.jpeg",
+    "static/media/wp-partners.svg": "/mern-arc/static/media/wp-partners.347261dc32a2b17a18694a0408ecc50c.svg",
+    "static/media/glory-partners-icon.svg": "/mern-arc/static/media/glory-partners-icon.d361b9b7e91a69a666d2718880efce6f.svg",
+    "static/media/pin-up-partners.svg": "/mern-arc/static/media/pin-up-partners.aefa576218bebd814d9f84e02b848fac.svg",
+    "static/media/igaming-icon.svg": "/mern-arc/static/media/igaming-icon.ecdee3e76ee2ed338458c105db976019.svg",
+    "static/media/tik-tok-courses.svg": "/mern-arc/static/media/tik-tok-courses.2c6809e71a53df73bdca07c6019ef784.svg",
+    "static/media/facebook-courses.svg": "/mern-arc/static/media/facebook-courses.a1c4df9b8f58390eff0e1ab77c2c9f2f.svg",
+    "static/media/bro-icon.svg": "/mern-arc/static/media/bro-icon.e8e3999c7279fb04f57b3006c1861736.svg",
+    "static/media/trafflab.svg": "/mern-arc/static/media/trafflab.dd5d1aff0c7da1bcd27636f507dcd5a1.svg",
+    "static/media/eye.svg": "/mern-arc/static/media/eye.52efa82ce6afac53fe23346d893d98ce.svg",
+    "index.html": "/mern-arc/index.html",
+    "main.0ea6ef6c.css.map": "/mern-arc/static/css/main.0ea6ef6c.css.map",
+    "main.7c3c1a79.js.map": "/mern-arc/static/js/main.7c3c1a79.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f803769.css",
-    "static/js/main.b7a047c6.js"
+    "static/css/main.0ea6ef6c.css",
+    "static/js/main.7c3c1a79.js"
   ]
 }
