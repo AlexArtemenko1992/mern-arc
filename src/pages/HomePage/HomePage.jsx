@@ -1,4 +1,3 @@
-// import { useState, useRef, useEffect } from "react";
 import {
   Top,
   PageAnimation,
@@ -8,6 +7,9 @@ import {
   Partners,
   Areas,
   Info,
+  Affilate,
+  Command,
+  Comments,
 } from "../../components";
 import "./HomePage.scss";
 
@@ -15,13 +17,15 @@ const HomePage = () => {
   return (
     <PageAnimation>
       <Top />
+      <Affilate />
       <Info />
-      <Areas />
+      <Command />
       <Advantages />
+      <Areas />
       <Rates />
       <Faq />
-
       <Partners />
+      <Comments />
     </PageAnimation>
   );
 };

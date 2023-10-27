@@ -39,23 +39,15 @@ $spacer: 1rem;
   //   max-width: 80vw;
   display: flex;
   justify-content: space-between;
-  max-width: 1190px;
+  // max-width: 1180px;
   margin: 0 auto;
 
-  .left {
-    flex-basis: 49%;
-  }
-
-  .right {
-    flex-basis: 49%;
-  }
-
   &-item {
-    border-top: 3px solid #ddd;
-    flex-basis: 48%;
-    &:last-child {
-      border-bottom: 3px solid #ddd;
-    }
+    border-bottom: 3px solid #21262c;
+    // flex-basis: 48%;
+    // &:last-child {
+    //   border-bottom: 3px solid #fad049;
+    // }
   }
   &-trigger {
     display: flex;
@@ -64,10 +56,10 @@ $spacer: 1rem;
     padding: $spacer;
     cursor: pointer;
     h4 {
-      margin: 0;
-      color: #fff;
-      font-size: 26px;
-      font-weight: 300;
+      margin: 10px 0;
+      color: #21262c;
+      font-size: 24px;
+      font-weight: 600;
     }
   }
   &-content {
@@ -81,7 +73,7 @@ $spacer: 1rem;
       opacity: 0;
       transform: translateY(-$spacer * 1);
       transition: $base-duration * 1.5 ease;
-      color: #fff;
+      color: #21262c;
       font-size: 15px;
     }
     &.is-active {
@@ -102,8 +94,8 @@ $spacer: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border: 0;
     background-color: transparent;
     &:before,
@@ -111,8 +103,8 @@ $spacer: 1rem;
       position: absolute;
       content: "";
       width: 50%;
-      height: 2px;
-      background-color: #fff;
+      height: 4px;
+      background-color: #21262c;
       transition: $base-duration * 2 ease;
     }
 

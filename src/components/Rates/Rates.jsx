@@ -5,39 +5,6 @@ import { useRef } from "react";
 import ModalPortal from "../../global/ModalPortal/ModalPortal";
 import { useSelector, useDispatch } from "react-redux";
 
-const ratesPlan = [
-  {
-    id: "rate-tt",
-    num: 1,
-    title: "Tik-tok",
-    subtitle: "Середній заробіток після закінчення курсу - 1400$/місяць",
-    lessons: 20,
-    course: "Тік-ток",
-    advantage: "Telegram-ком`юніті",
-    price: 299,
-  },
-  {
-    id: "rate-fb",
-    num: 2,
-    title: "Facebook",
-    subtitle: "Середній заробіток після закінчення курсу - 1700$/місяць",
-    lessons: 20,
-    course: "Facebook",
-    advantage: "Telegram-ком`юніті",
-    price: 299,
-  },
-  {
-    id: "rate-tt+fb",
-    num: 3,
-    title: "Tik-tok + Facebook",
-    subtitle: "Середній заробіток після закінчення курсу від - 2000$/місяць",
-    lessons: 40,
-    course: "Facebook та Тік-ток",
-    advantage: "Приватний Telegram-канал",
-    price: 549,
-  },
-];
-
 const textAnimation = {
   hidden: {
     x: -200,
@@ -63,10 +30,12 @@ const Rates = () => {
   return (
     <motion.div
       className="rates"
+      id="rates"
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2 }}
       animate={1}
+      // id="courses"
     >
       <Container>
         <motion.h3
@@ -78,53 +47,124 @@ const Rates = () => {
         </motion.h3>
 
         <div className="rates-wrapper">
-          {ratesPlan.map(
-            ({
-              id,
-              num,
-              title,
-              subtitle,
-              lessons,
-              course,
-              advantage,
-              price,
-            }) => (
-              <motion.div
-                className="rates-wrapper__item"
-                id={num}
-                custom={num + 1}
-                variants={textAnimation}
-                ref={itemRef}
-                key={id}
-              >
-                <div
-                  className={`rates-numeric rates-numeric_${num}`}
-                >{`№${num}`}</div>
-                <div className="rates-title">{`Напрям: ${title}`}</div>
+          <motion.div
+            className="rates-wrapper__item"
+            custom={1}
+            variants={textAnimation}
+            ref={itemRef}
+          >
+            {/* <div className={`rates-numeric rates-numeric_${1}`}>{`№${1}`}</div> */}
+            <div className="rates-title">Facebook</div>
+            <div className="rates-subtitle">
+              Середній заробіток після закінчення курсу - 1400$/місяць
+            </div>
+            <div className="rates-text">Курс у запису</div>
+            <div className="rates-text">Доступ до 20 уроків</div>
+            <div className="rates-text">Гнучкий графік навчання</div>
+            <div className="rates-text">Зручна LMS платформа</div>
+            <div className="rates-text">Круті спікери-практики</div>
+            <div className="rates-text">Підтримка закритого ком'юніті</div>
+            <div className="rates-text">Фідбек від менторів</div>
+            <div className="rates-text">100$ депозит на рекламну кампанію</div>
+            <div className="rates-text">
+              Безкоштовний доступ до всіх інструментів команди
+            </div>
+            <div className="rates-text">
+              4 індивідуальних годинних консультацій сам на сам з ментором
+            </div>
 
-                <div className="rates-subtitle">{subtitle}</div>
-                <hr />
-                <div className="rates-lessons">
-                  Кількість уроків: <span>{lessons}</span>
-                </div>
-                <div className="rates-course">
-                  Джерело: <span>{course}</span>
-                </div>
-                <div className="rates-advantage">{advantage}</div>
-                <div className="rates-price">
-                  {price}
-                  <span className="currency">$</span>
-                </div>
-                <button
-                  onClick={onClickHandler}
-                  data-id={id}
-                  className="rates-button"
-                >
-                  Записатися на курс
-                </button>
-              </motion.div>
-            )
-          )}
+            <div className="rates-price">
+              299
+              <span className="currency">$</span>
+            </div>
+            <button
+              onClick={onClickHandler}
+              data-id={1}
+              className="rates-button"
+            >
+              Записатися на курс
+            </button>
+          </motion.div>
+
+          <motion.div
+            className="rates-wrapper__item"
+            custom={2}
+            variants={textAnimation}
+            ref={itemRef}
+          >
+            {/* <div className={`rates-numeric rates-numeric_${2}`}>{`№${2}`}</div> */}
+            <div className="rates-title">Tik-tok</div>
+            <div className="rates-subtitle">
+              Середній заробіток після закінчення курсу - 1400$/місяць
+            </div>
+            <div className="rates-text">Курс у запису</div>
+            <div className="rates-text">Доступ до 20 уроків</div>
+            <div className="rates-text">Гнучкий графік навчання</div>
+            <div className="rates-text">Зручна LMS платформа</div>
+            <div className="rates-text">Круті спікери-практики</div>
+            <div className="rates-text">Підтримка закритого ком'юніті</div>
+            <div className="rates-text">Фідбек від менторів</div>
+            <div className="rates-text">100$ депозит на рекламну кампанію</div>
+            <div className="rates-text">
+              Безкоштовний доступ до всіх інструментів команди
+            </div>
+            <div className="rates-text">
+              4 індивідуальних годинних консультацій сам на сам з ментором
+            </div>
+
+            <div className="rates-price">
+              299
+              <span className="currency">$</span>
+            </div>
+            <button
+              onClick={onClickHandler}
+              data-id={2}
+              className="rates-button"
+            >
+              Записатися на курс
+            </button>
+          </motion.div>
+
+          <motion.div
+            className="rates-wrapper__item"
+            custom={3}
+            variants={textAnimation}
+            ref={itemRef}
+          >
+            {/* <div className={`rates-numeric rates-numeric_${2}`}>{`№${2}`}</div> */}
+            <div className="rates-title">Facebook + Tik-tok</div>
+            <div className="rates-subtitle">
+              Середній заробіток після закінчення курсу - 2000$/місяць
+            </div>
+            <div className="rates-text">Курс у запису</div>
+            <div className="rates-text">Доступ до 40+ уроків</div>
+            <div className="rates-text">Гнучкий графік навчання</div>
+            <div className="rates-text">Зручна LMS платформа</div>
+            <div className="rates-text">Круті спікери-практики</div>
+            <div className="rates-text">Підтримка закритого ком'юніті</div>
+            <div className="rates-text">Фідбек від менторів</div>
+            <div className="rates-text full">
+              100$ депозит на рекламну кампанію
+            </div>
+            <div className="rates-text full">
+              Безкоштовний доступ до всіх інструментів команди
+            </div>
+            <div className="rates-text full">
+              4 індивідуальних годинних консультацій сам на сам з ментором
+            </div>
+
+            <div className="rates-price">
+              549
+              <span className="currency">$</span>
+            </div>
+            <button
+              onClick={onClickHandler}
+              data-id={3}
+              className="rates-button"
+            >
+              Записатися на курс
+            </button>
+          </motion.div>
         </div>
       </Container>
       {isShowPortal && <ModalPortal />}

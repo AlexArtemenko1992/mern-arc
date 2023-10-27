@@ -1,6 +1,16 @@
 import "./Partners.scss";
 import { motion } from "framer-motion";
 import { ReactComponent as GloryIcon } from "../../assets/glory-partners-icon.svg";
+import { ReactComponent as IGaming } from "../../assets/igaming-icon.svg";
+import { ReactComponent as PinUpIcon } from "../../assets/pin-up-partners.svg";
+import { ReactComponent as WpIcon } from "../../assets/wp-partners.svg";
+import { ReactComponent as Bro } from "../../assets/bro-icon.svg";
+import { ReactComponent as TraffLab } from "../../assets/trafflab.svg";
+import PPartenrs from "../../assets/profitov-partners-icon.png";
+import MyBet from "../../assets/my-bet-icon.png";
+import MostBet from "../../assets/most-bet.png";
+import ClickLeads from "../../assets/click-leads.png";
+
 import Container from "../../global/Container/Container";
 import { Link } from "react-router-dom";
 
@@ -21,14 +31,12 @@ const textAnimation = {
 };
 
 const partnersMock = [
-  { id: 1, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 2, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 3, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 4, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 5, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 6, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 7, Icon: GloryIcon, link: "https://glory.partners/" },
-  { id: 8, Icon: GloryIcon, link: "https://glory.partners/" },
+  { id: 0, Icon: GloryIcon, link: "https://glory.partners/" },
+  { id: 1, Icon: IGaming, link: "https://lgaming.com/" },
+  { id: 2, Icon: PinUpIcon, link: "https://pin-up.partners/" },
+  { id: 3, Icon: WpIcon, link: "https://welcome.partners/" },
+  { id: 4, Icon: Bro, link: "https://cpabro.vip/" },
+  { id: 5, Icon: TraffLab, link: "https://trafflab.io/en/" },
 ];
 
 const Partners = () => {
@@ -39,27 +47,66 @@ const Partners = () => {
       viewport={{ amount: 0.2 }}
       className="partners"
     >
-      <motion.h3
-        custom={1}
-        variants={textAnimation}
-        className="partners-main__title"
-      >
-        Наші партнери
-      </motion.h3>
       <Container>
+        <motion.h3
+          custom={1}
+          variants={textAnimation}
+          className="partners-main__title"
+        >
+          Наші партнери
+        </motion.h3>
         <div className="partners-list">
           {partnersMock.map(({ id, Icon, link }) => (
             <motion.div
               custom={id + 1}
               variants={textAnimation}
               key={id}
+              id={`icon-${id}`}
               className="partners-list__item"
             >
-              <Link to={link}>
+              <Link target="_blank" to={link}>
                 <Icon />
               </Link>
             </motion.div>
           ))}
+
+          <motion.div
+            custom={6}
+            variants={textAnimation}
+            className="partners-list__item"
+          >
+            <Link target="_blank" to="https://mrbet.partners/">
+              <img src={MyBet} alt="my-bet" />
+            </Link>
+          </motion.div>
+          <motion.div
+            custom={7}
+            variants={textAnimation}
+            className="partners-list__item"
+          >
+            <Link target="_blank" to="https://mostbet.partners/">
+              <img src={MostBet} alt="most-bet" />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            variants={textAnimation}
+            custom={8}
+            className="partners-list__item ppartners"
+          >
+            <Link target="_blank" to="https://aff.profitov.partners/v2/sign/in">
+              <img src={PPartenrs} alt="ppartners" />
+            </Link>
+          </motion.div>
+          <motion.div
+            custom={9}
+            variants={textAnimation}
+            className="partners-list__item"
+          >
+            <Link target="_blank" to="https://clicklead.network/">
+              <img className="click-leads" src={ClickLeads} alt="click-leads" />
+            </Link>
+          </motion.div>
         </div>
       </Container>
     </motion.div>

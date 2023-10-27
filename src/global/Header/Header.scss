@@ -1,14 +1,59 @@
 .header {
-  padding: 25px 60px;
-  background: rgba(0, 0, 0, 0.4);
+  // padding: 25px 60px;
+  // background: rgba(0, 0, 0, 0.4);
+  background: inherit;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   border: none;
+  z-index: 1;
+  transition: 0.3s background;
+}
+
+.header-btn {
+  width: 260px;
+  background-color: #fad049;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  height: 40px;
+  color: #111;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
   display: flex;
   align-items: center;
-  z-index: 1;
+  justify-content: center;
+}
+
+.header-btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.header-links__wrapper {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-info {
+  background-color: #fad049;
+  color: #111;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.header-info a {
+  color: #3f78e0;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .header .container {
@@ -17,14 +62,32 @@
 
 .login-btns__group {
   display: flex;
-  margin-left: auto;
+  justify-content: space-between;
+  min-width: 700px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.login-btns__group a {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+
+.login-btns__group a:hover {
+  transition: 0.3s ease-in-out all;
+  transform: scale(1.2);
 }
 
 .header-links {
   display: flex;
   color: #fff;
   align-items: center;
-  width: 85%;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 900px;
 }
 
 .header-link__item {
@@ -38,8 +101,21 @@
 }
 
 .header-logo {
-  font-size: 30px;
+  font-size: 22px;
+  font-weight: 800;
   color: #fff;
   margin-right: 60px;
-  width: 200px;
+  width: 120px;
+  border-top: 1px solid #fff;
+  padding-bottom: 2px;
+}
+
+.header-logo span {
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  margin-top: -4px;
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
 }

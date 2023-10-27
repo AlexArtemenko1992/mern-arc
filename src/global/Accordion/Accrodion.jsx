@@ -22,9 +22,6 @@ const mockItems = [
     title: "Як відбувається навчання?",
     body: "Після оплати ти отримуєш доступ до матеріалу, переглянувши відео + мануали, доступ до домашнього завдання, яке уважно переглядає відділ підтримки. Проводимо дзвінки, розбори + рубрику питання/відповідь. Після цього починаємо спільно заливати рк в кабінети.",
   },
-];
-
-const mockItemsV2 = [
   {
     id: 5,
     title: "Скільки зможу заробити?",
@@ -47,7 +44,7 @@ const mockItemsV2 = [
   },
 ];
 
-const AccordionItem = ({ id, title, body }) => {
+const AccordionItem = ({ title, body }) => {
   const [state, setState] = useState(false);
 
   const toggleAccordion = () => {
@@ -70,13 +67,8 @@ const AccordionItem = ({ id, title, body }) => {
 const Accordion = () => {
   return (
     <div className="accordion">
-      <div className="left">
+      <div>
         {mockItems.map(({ id, title, body }) => (
-          <AccordionItem key={id} id={id} title={title} body={body} />
-        ))}
-      </div>
-      <div className="right">
-        {mockItemsV2.map(({ id, title, body }) => (
           <AccordionItem key={id} id={id} title={title} body={body} />
         ))}
       </div>

@@ -3,24 +3,32 @@ import Container from "../../global/Container/Container";
 
 const Info = () => {
   return (
-    <div className="info">
+    <div className="info" id="info">
       <Container>
-        <h2 className="info-title">Що ти вивчиш?</h2>
+        <h2 className="info-title">Що вас чекає?</h2>
         <div className="info-list">
           <div className="info-item">
-            <h3 className="item-title">Вивчиш принципи роботи з додатками</h3>
-          </div>
-          <div className="info-item">
             <h3 className="item-title">
-              Навчишся запускати рекламу та працювати з нею
+              Практичні навички. Робота в реальних акаунтах з реальним трафіком
+              та бюджетами.
             </h3>
           </div>
           <div className="info-item">
-            <h3 className="item-title">Вивчиш головні джерела трафіку 2023</h3>
+            <h3 className="item-title">
+              Всі лектори – практикуючі експерти по роботі з трафіком. Знають
+              технічні тонкощі роботи.
+            </h3>
           </div>
           <div className="info-item">
             <h3 className="item-title">
-              Навчишся знаходити прибуткові зв`язки
+              Підтримка менторів, рекомендації для удосконалення скілів та
+              швидкого росту.
+            </h3>
+          </div>
+          <div className="info-item">
+            <h3 className="item-title">
+              Потужний нетворкінг та спілкування в чатах для побудови корисних
+              взаємовідносин.
             </h3>
           </div>
         </div>

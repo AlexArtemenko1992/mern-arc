@@ -26,22 +26,24 @@ const advantagesMock = [
   {
     id: 1,
     Icon: VideoCameraFrontIcon,
-    text: "Офлайн навчання",
+    title: "Офлайн навчання",
+    text: "",
   },
   {
     id: 2,
     Icon: OndemandVideoIcon,
-    text: "Запис всіх занять",
+    title: "Запис всіх занять",
+    text: "Всі заняття розбиті на модулі, це дає можливість вивчати матеріал у необхідній послідовності",
   },
   {
     id: 3,
     Icon: CoPresentIcon,
-    text: "Відповіді від менторів",
+    title: "Відповіді від менторів",
   },
   {
     id: 4,
     Icon: TuneIcon,
-    text: "Доступ до всіх інструментів",
+    title: "Доступ до всіх інструментів",
   },
 ];
 
@@ -62,7 +64,7 @@ const Advantages = () => {
           Наші переваги
         </motion.h3>
         <div className="advantages-list">
-          {advantagesMock.map(({ id, Icon, text }) => {
+          {advantagesMock.map(({ id, Icon, title, text }) => {
             return (
               <motion.div
                 custom={id + 1}
@@ -71,6 +73,7 @@ const Advantages = () => {
                 className="advantages-list__item"
               >
                 <Icon />
+                <p className="advantages-item__title">{title}</p>
                 <p className="advantages-item__text">{text}</p>
               </motion.div>
             );

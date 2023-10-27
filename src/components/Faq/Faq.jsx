@@ -13,7 +13,7 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.1 },
     zIndex: 0,
     // display: "block",
   }),
@@ -29,19 +29,20 @@ const textAnimationLeft = {
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.1 },
     zIndex: 0,
     // display: "block",
   }),
 };
 
-const Faq = () => {
+const Faq = ({ scrollRef }) => {
   return (
     <motion.div
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2 }}
       className="faq"
+      id="faq"
     >
       <Container>
         <motion.h4

@@ -47,9 +47,10 @@ function App() {
             localStorage.removeItem("user");
             localStorage.removeItem("token");
             localStorage.removeItem("refreshToken");
-            navigate("/");
+            // navigate("/");
           }
-        });
+        })
+        .catch((e) => console.log(e));
     }
   }, []);
 

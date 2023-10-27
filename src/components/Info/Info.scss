@@ -1,19 +1,25 @@
 .info {
-  padding-bottom: 80px;
+  padding: 100px 0;
+  background: #111;
+  margin-bottom: -2px;
 }
 
 .info-title {
-  font-size: 46px;
-  color: #111;
+  color: #fff;
+  font-size: 54px;
   margin-bottom: 60px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
 }
 
 .info-item {
-  //   flex-basis: 25%;
+  flex-basis: 24.5%;
 }
 
 .info-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .item-title {
@@ -23,8 +29,10 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 18px;
-  color: #111;
+  font-size: 14px;
+  color: #fff;
+  border-left: 5px solid #ffeb3b;
+  padding-left: 15px;
 }
 
 .item-title::before {
@@ -32,8 +40,8 @@
   display: block;
   height: 45px;
   width: 4px;
-  background: linear-gradient(to bottom, #ffeb3b, #ff4e50);
+  //   background: ;
   position: absolute;
   top: 0;
-  left: -16px;
+  right: 10px;
 }

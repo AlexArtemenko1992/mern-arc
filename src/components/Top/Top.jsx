@@ -1,8 +1,10 @@
 import { Container } from "../../components";
 import "./Top.scss";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import { ReactComponent as FacebookIcon } from "../../assets/facebook-icon.svg";
-import { ReactComponent as TiktokIcon } from "../../assets/tiktok-icon.svg";
+import CountUp from "react-countup";
+// import { ReactComponent as FacebookIcon } from "../../assets/facebook-icon.svg";
+// import { ReactComponent as TiktokIcon } from "../../assets/tiktok-icon.svg";
 
 const textAnimation = {
   hidden: (custom) => ({
@@ -13,7 +15,7 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.4 },
+    transition: { delay: custom * 0.1 },
   }),
 };
 
@@ -21,86 +23,87 @@ const Top = () => {
   return (
     <div className="top">
       <Container>
-        <motion.h1 custom={1} variants={textAnimation} className="top__title">
-          Курси з арбітражу
-          <br /> трафіку
-        </motion.h1>
-        <motion.h2
-          custom={2}
-          variants={textAnimation}
-          className="top__subtitle"
-        >
-          До вашої уваги найбільш популярні
-          <br /> напрями для навчання.
-          <br />
-          <div className="way">
-            <FacebookIcon />
-            <TiktokIcon />
-          </div>
-        </motion.h2>
-      </Container>
-      <motion.div
-        custom={2}
-        variants={textAnimation}
-        className="achievements-list"
-      >
         <motion.div
-          custom={3}
+          custom={1}
           variants={textAnimation}
-          className="achievements-list__item"
+          className="top-content__wrapper"
         >
-          <div className="achievements__sum">196</div>
-          <div className="achievements__text">баєрів підготували</div>
+          <h1 className="top__title_1">
+            Почни вивчати сучасну та прибуткову професію
+          </h1>
+          <h2 className="top__title_2">
+            Арбітражник
+            <br /> трафіку
+          </h2>
+          <h3 className="top__subtitle">
+            До вашої уваги найбільш популярні
+            <br /> напрями для навчання.
+          </h3>
+          <TypeAnimation
+            sequence={[
+              "Не зволікай, вперед до мрії <3", // Types 'One'
+              3000, // Waits 1s
+              "Стань професіоналом у найбільш популярній у 2023 році ніші", // Deletes 'One' and types 'Two'
+              3000, // Waits 2s
+              "Вперед! ;)", // Types 'Three' without deleting 'Two'
+            ]}
+            wrapper="span"
+            cursor={true}
+            repeat={Infinity}
+            style={{
+              fontSize: "14px",
+              display: "inline-block",
+              color: "#fad049",
+            }}
+          />
         </motion.div>
-        <motion.div
-          custom={3}
-          variants={textAnimation}
-          className="achievements-list__item"
-        >
-          <div className="achievements__sum">93%</div>
+      </Container>
+      <div className="achievements-list">
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={196} duration={2.1} />
+          </div>
+          <div className="achievements__text">баєрів підготували</div>
+        </div>
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={93} duration={2.3} />%
+          </div>
           <div className="achievements__text">
             теорії засвоюють наші студенти
           </div>
-        </motion.div>
-        <motion.div
-          custom={3}
-          variants={textAnimation}
-          className="achievements-list__item"
-        >
-          <div className="achievements__sum">3</div>
+        </div>
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={3} duration={2.5} />
+          </div>
           <div className="achievements__text">доступні пакети для навчання</div>
-        </motion.div>
-        <motion.div
-          custom={3}
-          variants={textAnimation}
-          className="achievements-list__item"
-        >
-          <div className="achievements__sum">100%</div>
+        </div>
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={100} duration={2.7} />%
+          </div>
           <div className="achievements__text">
             наших студентів знаходять роботу на протязі 2 тижнів
           </div>
-        </motion.div>
-        <motion.div
-          custom={3}
-          variants={textAnimation}
-          className="achievements-list__item"
-        >
-          <div className="achievements__sum">30</div>
+        </div>
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={30} duration={2.9} />
+          </div>
           <div className="achievements__text">
             студентів проходять навчання прямо зараз
           </div>
-        </motion.div>
-        <motion.div
-          custom={3}
-          variants={textAnimation}
-          className="achievements-list__item"
-        >
-          <div className="achievements__sum">90%</div>
+        </div>
+        <div className="achievements-list__item">
+          <div className="achievements__sum">
+            <CountUp end={90} duration={3.1} />%
+          </div>
           <div className="achievements__text">
             студентів можуть заливати трафік і на Facebook і на Tik-tok
           </div>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </div>
   );
 };
