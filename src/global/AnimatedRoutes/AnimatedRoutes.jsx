@@ -30,7 +30,7 @@ const AnimatedRoutes = ({ isLogged }) => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route
-          path="/mern-arc/"
+          path="/"
           exact
           element={!isLoaded ? <Preloader /> : <HomePage />}
           // element={<HomePage />}
